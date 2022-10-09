@@ -1,0 +1,25 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "API for HubConf",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AUBGTheHUB/hub-conf-signup.git"
+  },
+  "keywords": [
+    "hub-conf"
+  ],
+  "author": "NOSYNCDEV",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AUBGTheHUB/hub-conf-signup/issues"
+  },
+  "homepage": "https://github.com/AUBGTheHUB/hub-conf-signup#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
