@@ -7,6 +7,8 @@ const RegForm = () => {
 
     const [toggled, setToggled] = useState(false)
     const [inputBoxSchool, setInputBoxSchool] = useState("input-box-hidden")
+    const [fullNameFormat, setFullNameFormat] = useState("field-incorrect")
+    const [emailFormat, setEmailFormat] = useState("field-incorrect")
 
     const [formState, setFormState] =  useState({
         fullName: "", 
@@ -14,10 +16,29 @@ const RegForm = () => {
         school: ""
     })
 
+    function checkFormat(name, value) {
+        if(name === "email"){
+            if(checkEmail(value)){
+                setEmailFormat("field-incorrect")
+            } else {
+                setEmailFormat("field-correct")
+            }
+        }
+        else if(name === "fullName"){
+            if(checkEmptyString(value)){
+                setFullNameFormat("field-incorrect")
+            } else {
+                setFullNameFormat("field-correct")
+            }
+        }
+    }
+
     const handleInputChange = (event) => {
         const target = event.target;
         const value = target.value;
         const name = target.name;
+
+        checkFormat(name, value);
 
         setFormState({
             ...formState,
@@ -27,8 +48,21 @@ const RegForm = () => {
         console.log(formState);
     }
 
+    function checkEmptyString(string){
+        return /^\s*$/.test(string);
+    }
+
+    function checkEmail(string){
+        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(string)
+    }
+
     const handleSubmit = (event) => {
-        axios
+
+        if (fullNameFormat !== "field-correct" && emailFormat !== "field-correct"){
+            window.alert("NE E PRAILNO BRAT")
+        }
+        else {
+         axios
           .post('http://10.252.27.2:8000/api/signup', formState)
           .then((res) => {
             console.log(res)
@@ -36,8 +70,9 @@ const RegForm = () => {
           .catch((err) => {
             console.log(err);
           });
-      };
-
+        }
+    
+    }
 
     return (
         <div>
@@ -53,12 +88,12 @@ const RegForm = () => {
                                 
                                 <div class="input-box">
                                     <span class="details">Email</span>
-                                    <input type="text" placeholder="Enter your email" name="email" required onChange={handleInputChange}></input>
+                                    <input type="email" placeholder="Enter your email" name="email" required onChange={handleInputChange}></input>
                                 </div>
                                 <div class="input-box">
                                     <span class="details">Are you a student?</span>
 
-                                </div>
+                                </div> 
                                 <div className="input-box">
                                     <label class="switch">
 
