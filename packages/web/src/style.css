@@ -379,6 +379,10 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+.input-box-hidden{
+  display: none !important;
+}
+
 /* Rounded sliders */
 .slider.round {
   border-radius: 34px;

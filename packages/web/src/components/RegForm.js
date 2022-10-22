@@ -1,9 +1,12 @@
 import React from "react";
-
-
 import "../style.css";
+import { useState } from "react";
 
 const RegForm = () => {
+
+    const [toggled, setToggled] = useState(false)
+    const [inputBoxSchool, setInputBoxSchool] = useState("input-box-hidden")
+
     return (
         <div>
             <div class="container">
@@ -24,15 +27,23 @@ const RegForm = () => {
                                     <span class="details">Are you a student?</span>
 
                                 </div>
-                                <div class="input-box">
+                                <div className="input-box">
                                     <label class="switch">
 
-                                    <input type="checkbox" checked></input>
+                                    <input type="checkbox" onClick={()=> {
+                                        if(toggled){
+                                            setToggled(false)
+                                            setInputBoxSchool("input-box-hidden")
+                                        } else {
+                                            setToggled(true)
+                                            setInputBoxSchool("input-box")
+                                        }
+                                    }}></input>
                                     <span class="slider round"></span>
 
                                     </label>
                                 </div>
-                                <div class="input-box">
+                                <div className={inputBoxSchool}>
                                     <span class="details">School</span>
                                     <input type="text" placeholder="Enter your school's name"></input>
                                 </div>
