@@ -37,7 +37,6 @@ app.post('/api/signup', (req, res) => {
 
     if(!validateBody(req.body)){
         res.sendStatus(400)
-        console.log(req.body)
         return
     }
 
