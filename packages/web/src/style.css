@@ -16,6 +16,7 @@
     background-image: linear-gradient(#BE0071, #050032);
     color: #fff;
     height: 100vh;
+    z-index: -1;
 }
 
 .logo{
@@ -28,7 +29,7 @@
     padding: 20px;
     display: inline-flex;
     color: white;
-    font-weight: 500;
+    font-weight: bold;
 }
 .nav-bar a:hover{
     background-color: inherit;
@@ -65,7 +66,7 @@
 
 /*style for body text under Welcome to hubconf*/
 .p{
-    /*justify-content: left;*/
+    justify-content: left;
     box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: white;
@@ -74,7 +75,8 @@
 }
 .Event .content{
     justify-content: center;
-    display: inline-block;
+    display: flex;
+    z-index: 1;
 }
 
 /*png "line"*/
@@ -83,5 +85,6 @@
     margin: 0;
     padding: 0;
     width: 30%;
+    z-index: 0;
     height: 10%;
 }
