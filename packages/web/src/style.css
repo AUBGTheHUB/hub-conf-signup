@@ -52,19 +52,21 @@
     width: 100%;
     margin: 0;
     justify-content: space-between;
+    padding-top: 45px;
+    padding-bottom: 45px;
 
 }
 
 /*style for section heading - e.g. welcome to hubconf*/
 .Event .heading{
-    width: 70%;
+    width: 50%;
     text-align: center;
     align-items: center; 
     box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  font-weight: bold;
-  font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
     /* display: flex; */
     z-index: 1;
     display: inline-block;
@@ -72,20 +74,27 @@
 }
 
 /*style for body text under Welcome to hubconf*/
-.p{
-    justify-content: left;
+.Event .content {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.Event .content p{
+    text-align: left;
     box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  color: white;
-  font-weight:400;
-  font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight:400;
+    font-size: 16px;
+    max-width: 50%;
+    
+
+  
 }
 
 /*png "line"*/
 .motherboard{
     display: inline-block;
     width: 25%;
-}
-.motherboard img{
-    
 }
