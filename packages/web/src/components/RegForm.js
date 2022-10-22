@@ -19,9 +19,9 @@ const RegForm = () => {
     function checkFormat(name, value) {
         if(name === "email"){
             if(checkEmail(value)){
-                setEmailFormat("field-incorrect")
-            } else {
                 setEmailFormat("field-correct")
+            } else {
+                setEmailFormat("field-incorrect")
             }
         }
         else if(name === "fullName"){
@@ -83,12 +83,12 @@ const RegForm = () => {
                             <div class="user-details">
                                 <div class="input-box">
                                     <span class="details">Full Name</span>
-                                    <input type="text" placeholder="Enter your name" required name="fullName" onChange={handleInputChange}></input>
+                                    <input className={fullNameFormat} type="text" placeholder="Enter your name" required name="fullName" onChange={handleInputChange}></input>
                                 </div>
                                 
                                 <div class="input-box">
                                     <span class="details">Email</span>
-                                    <input type="email" placeholder="Enter your email" name="email" required onChange={handleInputChange}></input>
+                                    <input className={emailFormat} type="email" placeholder="Enter your email" name="email" required onChange={handleInputChange}></input>
                                 </div>
                                 <div class="input-box">
                                     <span class="details">Are you a student?</span>
@@ -116,9 +116,7 @@ const RegForm = () => {
                                 </div>
                             </div>
                         
-                            <div class="button">
-                                <input onClick={handleSubmit}></input>
-                            </div>
+                            <div class="button" onClick={handleSubmit}><h3>Register</h3></div>
                         </form>
                     </div>
             </div>

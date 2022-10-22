@@ -525,3 +525,20 @@ input:checked + .slider:before {
     }
   }
   
+.field-correct {
+  background-color: white;
+  color: black !important;
+}
+
+.field-incorrect{
+  background-color: silver;
+  color: black !important;
+}
+
+.button {
+  width: 100%;
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
