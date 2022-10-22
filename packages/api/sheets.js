@@ -14,12 +14,12 @@ module.exports = {
 
             if("school" in obj){
                 const rowAppend = await sheet.addRows([
-                    { name: obj.name , email: obj.email, school: obj.school},
+                    { name: obj.fullName , email: obj.email, school: obj.school},
                 ]);
             }
             else{
                 const rowAppend = await sheet.addRows([
-                { name: obj.name , email: obj.email},
+                { name: obj.fullName , email: obj.email},
             ]);  
             }
         }  
