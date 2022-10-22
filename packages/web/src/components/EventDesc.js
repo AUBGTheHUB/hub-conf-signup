@@ -16,7 +16,7 @@ const EventDesc = () => {
             <br></br> Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
             
         </div>
-</div>
+    </div>  
     )
 }
 

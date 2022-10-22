@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 
 import EventDesc from "./components/EventDesc";
+import Speakers from "./components/Speakers";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
     <div className="website">
       <Navbar/>
       <EventDesc/>
+      <Speakers/>
     </div>
   );
 }

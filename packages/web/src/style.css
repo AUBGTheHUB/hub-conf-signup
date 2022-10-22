@@ -15,7 +15,7 @@
     align-items: center !important;
     background-image: linear-gradient(#BE0071, #050032);
     color: #fff;
-    height: 100vh;
+    height: 100%;
     z-index: -1;
 }
 
@@ -42,12 +42,12 @@
     display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 150px; */
 }
 
 /*Event Description - first section*/
 
-.Event{
+.Event,
+.Speaker{
     display: inline-block;
     width: 100%;
     margin: 0;
@@ -58,7 +58,8 @@
 }
 
 /*style for section heading - e.g. welcome to hubconf*/
-.Event .heading{
+.Event .heading,
+.Speaker .heading{
     width: 50%;
     text-align: center;
     align-items: center; 
@@ -67,8 +68,6 @@
     color: white;
     font-weight: bold;
     font-size: 35px;
-    /* display: flex; */
-    z-index: 1;
     display: inline-block;
 
 }
@@ -87,14 +86,29 @@
     color: white;
     font-weight:400;
     font-size: 16px;
-    max-width: 50%;
-    
-
-  
+    max-width: 60%;  
 }
 
 /*png "line"*/
-.motherboard{
+.Event .motherboard{
     display: inline-block;
     width: 25%;
+}
+
+
+
+/*speakers style*/
+.Speaker{
+    width: 100%;
+}
+
+.Speaker .heading{
+    width: 75%;
+    padding-left:25%;
+}
+
+.Speaker .flippedmb{
+    display: inline-block;
+    width: 25%;
+    
 }
