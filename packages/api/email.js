@@ -19,9 +19,25 @@ let transporter = nodemailer.createTransport({
 
 })
 
+message = {
 
-function sendMail() {
-    console.log("SEND MAIL")
+    to: "mihailbozhilovjr@gmail.com",
+
+    subject: "Subject",
+
+    text: "Hello SMTP Email"
+
 }
 
-sendMail()
+transporter.sendMail(message, (err, info) => {
+
+    if (err) {
+
+        console.log(err)
+
+    } else {
+
+        console.log(info);
+
+    }
+})
