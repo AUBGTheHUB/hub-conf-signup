@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 
 import EventDesc from "./components/EventDesc";
 import Speakers from "./components/Speakers";
+import Registration from "./components/Registration";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Navbar/>
       <EventDesc/>
       <Speakers/>
+      <Registration/>
     </div>
   );
 }
