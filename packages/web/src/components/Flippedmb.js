@@ -3,8 +3,8 @@ import "../style.css";
 
 const Flippedmb = () => {
     return (
-        <div className="flippedmb">
-        <img  src = "flippedmb.png" alt="Hub logo"/>
+        <div className="flexbox-flipped">
+        <img  src = "flippedmb.png" alt="Hub logo" className="flippedmb"/>
       </div>
       
 

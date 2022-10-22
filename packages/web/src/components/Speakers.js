@@ -6,9 +6,9 @@ const Speakers = () => {
     return (
    
     <div className="Speaker">     
-    <div className="SpeakerDesc">
-        <h1 className="heading">Speakers</h1>  
+    <div className="SpeakerDesc"> 
         <Flippedmb/>   
+        <h1 className="heading">Speakers</h1>
         <div class="gallery">
       <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg"></img>
       <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg"></img>

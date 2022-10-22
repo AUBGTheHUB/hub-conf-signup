@@ -6,7 +6,6 @@ import "../style.css";
 const RegForm = () => {
     return (
         <div>
-            <h1 className="heading">Registration</h1>
             <div class="container">
                 <div class="title">Register for HubConf</div>
                     <div class="content">
@@ -16,9 +15,22 @@ const RegForm = () => {
                                     <span class="details">Full Name</span>
                                     <input type="text" placeholder="Enter your name" required></input>
                                 </div>
+                                
                                 <div class="input-box">
                                     <span class="details">Email</span>
                                     <input type="text" placeholder="Enter your email" required></input>
+                                </div>
+                                <div class="input-box">
+                                    <span class="details">Are you a student?</span>
+
+                                </div>
+                                <div class="input-box">
+                                    <label class="switch">
+
+                                    <input type="checkbox" checked></input>
+                                    <span class="slider round"></span>
+
+                                    </label>
                                 </div>
                                 <div class="input-box">
                                     <span class="details">School</span>

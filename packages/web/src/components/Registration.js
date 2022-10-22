@@ -6,17 +6,19 @@ import RegForm from "./RegForm";
 import "../style.css";
 
 const EventDesc = () => {
-    return (
-<div>
-    <div className="Event">     
-        <div className="EventDesc">
+    return (   
+
+<div className="Reg">     
+        <div className="RegDesc">
             <Motherboard/>
+            <h1 className="heading">Registration</h1>     
+        </div>
+        <div className="content">
+        <div>
+        <RegForm/>
+    </div> 
         </div>
     </div> 
-    <div>
-        <RegForm/>
-    </div>
-</div>   
     )
 }
 
