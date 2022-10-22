@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+.website{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
+    background-image: linear-gradient(#BE0071, #050032);
+    color: #fff;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,9 +14,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-.nav-bar {
-    background-color: black;
-}
+
 .nav-div{
     padding: 20px;
     display: inline-flex;

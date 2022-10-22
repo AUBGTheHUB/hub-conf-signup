@@ -5,8 +5,9 @@ function App() {
     // Check this UI Framework
     // Use for navkbar and other elements
     // https://chakra-ui.com/getting-started
-    <div>
+    <div className="website">
       <Navbar/>
+      
     </div>
   );
 }

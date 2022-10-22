@@ -21,9 +21,9 @@ const Navbar = () => {
                 <a href="">Speakers</a>
             </div>
         </div> 
-        {/* this is the end of the navdiv */}
-        
+        {/* this is the end of the navdiv */}            
     </div> 
+
     )
 }
 
