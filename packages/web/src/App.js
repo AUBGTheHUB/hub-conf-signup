@@ -1,4 +1,7 @@
 import Navbar from "./components/Navbar";
+import Motherboard from "./components/Motherboard";
+
+import EventDesc from "./components/EventDesc";
 
 function App() {
   return (
@@ -7,9 +10,11 @@ function App() {
     // https://chakra-ui.com/getting-started
     <div className="website">
       <Navbar/>
-      
+      <Motherboard/>
+      <EventDesc/>
     </div>
   );
+  
 }
 
 export default App;
