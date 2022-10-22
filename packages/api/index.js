@@ -2,6 +2,7 @@ const express = require('express')
 const bp = require('body-parser')
 const file = require('./sheets.js')
 const append = require('./sheets')
+const mailer = require('./email')
 
 const app = express()
 const port = 8000
@@ -32,7 +33,7 @@ parseBody = (obj) => {
 }
 
 app.get("/", (req, res)=> {
-    append.handleAppending(req.body)
+    mailer.sendMail(req.body)
     res.send("OK")
 })
 
