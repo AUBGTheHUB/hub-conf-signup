@@ -3,6 +3,7 @@ const bp = require('body-parser')
 const file = require('./sheets.js')
 const append = require('./sheets')
 const mailer = require('./email')
+const sheets = require('./sheets.js')
 
 const app = express()
 const port = 8000
@@ -32,23 +33,27 @@ parseBody = (obj) => {
    return newObj
 }
 
-app.get("/", (req, res)=> {
-    mailer.sendMail(req.body)
-    res.send("OK")
-})
-
 app.post('/api/signup', (req, res) => {
 
     if(!validateBody(req.body)){
         res.sendStatus(400)
+        console.log(req.body)
         return
     }
 
-   obj = parseBody(req.body)
-   res.send(obj)
+    try{
+        cleanedObj = parseBody(req.body)
+        sheets.handleAppending(cleanedObj)
+        mailer.sendMail(cleanedObj)
+        res.sendStatus(200)
+    }
 
-    // append.handleAppending(obj)
-    // mail.sendMail(obj.name)
+    catch {
+        // Internal Server Error
+        res.sendStatus(500)
+    }
+   
+
 })
 
 app.listen(port, () => {

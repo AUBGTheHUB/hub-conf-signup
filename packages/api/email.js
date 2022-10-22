@@ -1,10 +1,13 @@
 const nodemailer = require('nodemailer');
 const loadenv = require('dotenv')
 
+
+loadenv.config()
+
 module.exports = {
     sendMail: function (obj) {
-        loadenv.config()
-        let transporter = nodemailer.createTransport({
+
+        const transporter = nodemailer.createTransport({
 
             host: 'smtp.gmail.com',
 
@@ -22,25 +25,19 @@ module.exports = {
 
         message = {
 
+            from: "The Hub AUBG",
+
             to: obj.email ,
 
-            subject: "Subject",
+            subject: "HubConf 2022",
 
-            text: `Dear ${obj.fullName} you are invited to.`
+            text: `Dear ${obj.fullName}, thank you for attending HubConf!`
 
         }
-
+        
         transporter.sendMail(message, (err, info) => {
-
             if (err) {
-
                 console.log(err)
-
-            } else {
-
-                console.log(info);
-
             }
         })
-    }
-}
+}}
