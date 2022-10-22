@@ -2,9 +2,11 @@ import React from "react";
 import "../style.css";
 
 const Navbar = () => {
-    return (<h1>
-        Working
-    </h1>)
+    return (
+    <div className="black">
+        <img src = "whitelogo.png"/>;
+    </div> 
+    )
 }
 
 export default Navbar;
