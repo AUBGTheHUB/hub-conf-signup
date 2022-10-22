@@ -9,7 +9,7 @@ const RegForm = () => {
 
     return (
         <div>
-            <div class="container">
+            <div class="container" >
                 <div class="title">Register for HubConf</div>
                     <div class="content">
                         <form action="#">

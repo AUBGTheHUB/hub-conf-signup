@@ -1,14 +1,14 @@
 import React from "react";
 import "../style.css";
 
-const Flippedmb = () => {
+const Motherboard = () => {
     return (
-        <div className="flexbox-flipped">
-        <img  src = "flippedmb.png" alt="Hub logo" className="flippedmb"/>
+        <div className="flippedmb">
+        <img  src = "flippedmb.png" alt="Hub logo"/>
       </div>
       
 
     )
 }
 
-export default Flippedmb;
+export default Motherboard;
