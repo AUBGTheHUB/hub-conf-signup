@@ -1,9 +1,14 @@
 const express = require('express')
+const bp = require('body-parser')
 
 const app = express()
 const port = 8000
 
-app.get('/', (req, res) => {
+app.use(bp.json())
+app.use(bp.urlencoded({extended: true}))
+
+app.post('/api/signup', (req, res) => {
+    console.log(req.body)
     res.send('Hello World!')
 })
 
