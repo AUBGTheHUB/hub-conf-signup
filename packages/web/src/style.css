@@ -37,7 +37,7 @@
     }
 
 .nav-tags{
-    font-size: 20px;
+    font-size: 22px;
     padding-left: 30px;
     display: flex;
   justify-content: center;
@@ -85,7 +85,7 @@
     font-family: "Poppins", sans-serif;
     color: white;
     font-weight:400;
-    font-size: 16px;
+    font-size: 20px;
     max-width: 60%;  
 }
 
