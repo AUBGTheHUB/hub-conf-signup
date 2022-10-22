@@ -2,18 +2,21 @@
 
 import React from "react";
 import Motherboard from "./Motherboard";
-
+import RegForm from "./RegForm";
 import "../style.css";
 
 const EventDesc = () => {
     return (
-     
+<div>
     <div className="Event">     
         <div className="EventDesc">
             <Motherboard/>
-            <h1 className="heading">Registration</h1>     
         </div>
-    </div>  
+    </div> 
+    <div>
+        <RegForm/>
+    </div>
+</div>   
     )
 }
 
