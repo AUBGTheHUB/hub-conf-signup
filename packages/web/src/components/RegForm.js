@@ -1,6 +1,7 @@
 import React from "react";
 import "../style.css";
 import { useState } from "react";
+import axios from "axios";
 
 const RegForm = () => {
 
@@ -26,9 +27,16 @@ const RegForm = () => {
         console.log(formState);
     }
 
-    const handleSubmit = () => {
-        // send request to api
-    }
+    const handleSubmit = (event) => {
+        axios
+          .post('http://10.252.27.2:8000/api/signup', formState)
+          .then((res) => {
+            console.log(res)
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      };
 
 
     return (
@@ -74,7 +82,7 @@ const RegForm = () => {
                             </div>
                         
                             <div class="button">
-                                <input type="submit" value="Register"></input>
+                                <input onClick={handleSubmit}></input>
                             </div>
                         </form>
                     </div>

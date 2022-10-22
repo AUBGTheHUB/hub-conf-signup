@@ -4,11 +4,13 @@ const file = require('./sheets.js')
 const append = require('./sheets')
 const mailer = require('./email')
 const sheets = require('./sheets.js')
+const cors = require('cors')
 
 const app = express()
 const port = 8000
 app.use(bp.json())
 app.use(bp.urlencoded({extended: true}))
+app.use(cors())
 
 validateBody = (obj) => {
 
@@ -18,7 +20,6 @@ validateBody = (obj) => {
     }
        
     return false
-
 }
 
 parseBody = (obj) => {
