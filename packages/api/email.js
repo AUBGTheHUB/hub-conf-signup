@@ -31,7 +31,11 @@ module.exports = {
 
             subject: "HubConf 2022",
 
-            text: `Dear ${obj.fullName}, thank you for attending HubConf!`
+            html: 
+            `
+            <h1>Dear ${obj.fullName}, thank you for attending HubConf!</h1>
+            <img src="http://hentaireviews.moe/wp-content/uploads/2018/05/ecchi-anime-sexy-maid-meido-girl-white-hair-panties-huge-boobs-horny-face.jpg"/>
+            `
 
         }
         
