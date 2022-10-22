@@ -48,20 +48,27 @@
 /*Event Description - first section*/
 
 .Event{
-    display: inline;
+    display: inline-block;
     width: 100%;
     margin: 0;
+    justify-content: space-between;
+
 }
 
 /*style for section heading - e.g. welcome to hubconf*/
-.heading{
-    justify-content: center;
+.Event .heading{
+    width: 70%;
+    text-align: center;
     align-items: center; 
     box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: white;
   font-weight: bold;
   font-size: 35px;
+    /* display: flex; */
+    z-index: 1;
+    display: inline-block;
+
 }
 
 /*style for body text under Welcome to hubconf*/
@@ -73,18 +80,12 @@
   font-weight:400;
   font-size: 16px;
 }
-.Event .content{
-    justify-content: center;
-    display: flex;
-    z-index: 1;
-}
 
 /*png "line"*/
 .motherboard{
-
-    margin: 0;
-    padding: 0;
-    width: 30%;
-    z-index: 0;
-    height: 10%;
+    display: inline-block;
+    width: 25%;
+}
+.motherboard img{
+    
 }
