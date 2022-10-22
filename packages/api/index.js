@@ -16,11 +16,19 @@ validateBody = (obj) => {
     }
        
     return false
-    
+
 }
 
 parseBody = (obj) => {
-    console.log(obj)
+   let newObj = {}
+   newObj['fullName'] = obj['fullName']
+   newObj['email'] = obj['email']
+
+   if ('school' in obj && obj['school'] != null){
+    newObj['school'] = obj['school']
+   }
+
+   return newObj
 }
 
 app.get("/", (req, res)=> {
@@ -31,11 +39,15 @@ app.get("/", (req, res)=> {
 app.post('/api/signup', (req, res) => {
 
     if(!validateBody(req.body)){
-        res.send(400)
-     }
-     else{
-        console.log(validateBody(req.body))
-     }
+        res.sendStatus(400)
+        return
+    }
+
+   obj = parseBody(req.body)
+   res.send(obj)
+
+    // append.handleAppending(obj)
+    // mail.sendMail(obj.name)
 })
 
 app.listen(port, () => {
