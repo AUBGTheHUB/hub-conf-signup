@@ -1,5 +1,7 @@
 const express = require('express')
 const bp = require('body-parser')
+const file = require('./sheets.js')
+const append = require('./sheets')
 
 const app = express()
 const port = 8000
@@ -20,6 +22,11 @@ validateBody = (obj) => {
 parseBody = (obj) => {
     console.log(obj)
 }
+
+app.get("/", (req, res)=> {
+    append.handleAppending(req.body)
+    res.send("OK")
+})
 
 app.post('/api/signup', (req, res) => {
 
