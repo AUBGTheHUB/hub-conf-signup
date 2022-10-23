@@ -4,7 +4,7 @@ import "../style.css";
 const Sponsors  = () =>{
     return (
     <div className="sponsorsSection" id="Partners">
-            <h3 className="partnersText">Sponsors</h3>
+            {/* <h3 className="partnersText">Sponsors</h3> */}
             <div className="partnersHolders">
               <img className="partnersImages" src="/comp_logos/amplify.png"></img>
               <img className="dro" src="/comp_logos/droxic.png"></img>
