@@ -12,7 +12,7 @@ const Sponsors  = () =>{
               <img className="partnersImages" src="/comp_logos/vmware.png"></img>
               <img className="partnersImages" src="/comp_logos/creative_assembly.png"></img>
               <img className="partnersImages" src="/comp_logos/progress.png"></img>
-              <ijmg className="partnersImages" src="/comp_logos/chaos.png"></ijmg>
+              <img className="partnersImages" src="/comp_logos/chaos.png"></img>
               <img className="partnersImages" src="/comp_logos/uber_gold.png"></img>
               {/** bronze */}
               <img className="partnersImages" src="/comp_logos/postbank.png"></img>
