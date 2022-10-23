@@ -58,7 +58,7 @@ const RegForm = () => {
 
     const handleSubmit = (event) => {
 
-        if (fullNameFormat !== "field-correct" && emailFormat !== "field-correct"){
+        if (fullNameFormat !== "field-correct" || emailFormat !== "field-correct"){
             window.alert("NE E PRAILNO BRAT")
         }
         else {
