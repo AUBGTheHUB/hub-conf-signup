@@ -76,26 +76,26 @@ const RegForm = () => {
 
     return (
         <div>
-            <div class="container" >
-                <div class="title">Register for HubConf</div>
-                    <div class="content">
+            <div className="container" >
+                <div className="title">Register for HubConf</div>
+                    <div className="content">
                         <form action="#">
-                            <div class="user-details">
-                                <div class="input-box">
-                                    <span class="details">Full Name</span>
+                            <div className="user-details">
+                                <div className="input-box">
+                                    <span className="details">Full Name</span>
                                     <input className={fullNameFormat} type="text" placeholder="Enter your name" required name="fullName" onChange={handleInputChange}></input>
                                 </div>
                                 
-                                <div class="input-box">
-                                    <span class="details">Email</span>
+                                <div className="input-box">
+                                    <span className="details">Email</span>
                                     <input className={emailFormat} type="email" placeholder="Enter your email" name="email" required onChange={handleInputChange}></input>
                                 </div>
-                                <div class="input-box">
-                                    <span class="details">Are you a student?</span>
+                                <div className="input-box">
+                                    <span className="details">Are you a student?</span>
 
                                 </div> 
                                 <div className="input-box">
-                                    <label class="switch">
+                                    <label className="switch">
 
                                     <input type="checkbox" onClick={()=> {
                                         if(toggled){
@@ -106,17 +106,17 @@ const RegForm = () => {
                                             setInputBoxSchool("input-box")
                                         }
                                     }}></input>
-                                    <span class="slider round"></span>
+                                    <span className="slider round"></span>
 
                                     </label>
                                 </div>
                                 <div className={inputBoxSchool}>
-                                    <span class="details">School</span>
+                                    <span className="details">School</span>
                                     <input type="text" placeholder="Enter your school's name" name="school" onChange={handleInputChange}></input>
                                 </div>
                             </div>
                         
-                            <div class="button" onClick={handleSubmit}><h3>Register</h3></div>
+                            <div className="button" onClick={handleSubmit}><h3>Register</h3></div>
                         </form>
                     </div>
             </div>

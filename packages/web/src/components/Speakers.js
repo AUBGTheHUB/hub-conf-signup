@@ -10,7 +10,7 @@ const Speakers = () => {
     <h1 className="heading">Speakers</h1>
         <Flippedmb/>   
         
-        <div class="gallery">
+        <div className="gallery">
       <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg"></img>
       <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg"></img>
       <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg"></img>
