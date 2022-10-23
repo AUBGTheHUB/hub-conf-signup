@@ -2,9 +2,49 @@ import React from "react";
 import "../style.css";
 import { useState } from "react";
 import axios from "axios";
+import { Alert, AlertIcon, AlertTitle, AlertDescription } from "@chakra-ui/react";
+
+
 
 const RegForm = () => {
 
+    const ShowAlert = () => {
+
+        if (fullNameFormat === "field-incorrect" && emailFormat === "field-incorrect"){
+            return (
+                <div className={alertShown}>
+               <Alert status='error'>
+                <AlertIcon />
+                <AlertTitle>Incorrect format!</AlertTitle>
+                <AlertDescription>Name and Email format is incorrect</AlertDescription>
+                </Alert> 
+                </div>
+            )
+        }
+        else if(fullNameFormat === "field-incorrect"){
+            return (
+            <div className={alertShown}>
+            <Alert status='error'>
+            <AlertIcon />
+            <AlertTitle>Missing field!</AlertTitle>
+            <AlertDescription>Can't seem to find your name</AlertDescription>
+            </Alert>
+            </div>
+        )
+        }
+        else {
+            return (
+            <div className={alertShown}>
+            <Alert status='error'>
+            <AlertIcon />
+            <AlertTitle>Incorrect format!</AlertTitle>
+            <AlertDescription>Email is not formatted correctly!</AlertDescription>
+            </Alert>
+            </div>)
+        }
+    }
+
+    const [alertShown, setAlertShown] = useState("alert-hidden")
     const [toggled, setToggled] = useState(false)
     const [inputBoxSchool, setInputBoxSchool] = useState("input-box-hidden")
     const [fullNameFormat, setFullNameFormat] = useState("field-incorrect")
@@ -59,9 +99,10 @@ const RegForm = () => {
     const handleSubmit = (event) => {
 
         if (fullNameFormat !== "field-correct" || emailFormat !== "field-correct"){
-            window.alert("NE E PRAILNO BRAT")
+            setAlertShown("alert")
         }
         else {
+            setAlertShown("alert-hidden")
          axios
           .post('http://10.252.27.2:8000/api/signup', formState)
           .then((res) => {
@@ -71,7 +112,7 @@ const RegForm = () => {
             console.log(err);
           });
         }
-    
+
     }
 
     return (
@@ -80,6 +121,7 @@ const RegForm = () => {
                 <div className="title">Register for HubConf</div>
                     <div className="content">
                         <form action="#">
+                            {ShowAlert()}
                             <div className="user-details">
                                 <div className="input-box">
                                     <span className="details">Full Name</span>
@@ -116,7 +158,10 @@ const RegForm = () => {
                                 </div>
                             </div>
                         
-                            <div className="button" onClick={handleSubmit}><h3>Register</h3></div>
+                            <div className="button" onClick={() => {
+                                handleSubmit(alertShown)
+                                
+                                }}><h3>Register</h3></div>
                         </form>
                     </div>
             </div>

@@ -405,6 +405,14 @@ input:checked + .slider:before {
   padding-bottom: 2rem;
 }
 
+.alert-hidden{
+  display: none;
+}
+
+.alert{
+  color: black
+}
+
 /* .partnersText {
   color: black;
   font-family: 'Poppins';
@@ -543,7 +551,7 @@ input:checked + .slider:before {
 }
 
 .field-incorrect{
-  background-color: silver;
+  background-color: white;
   color: black !important;
 }
 
