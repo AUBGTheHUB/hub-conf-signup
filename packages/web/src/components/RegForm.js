@@ -78,6 +78,10 @@ const RegForm = () => {
         const value = target.value;
         const name = target.name;
 
+        if (fullNameFormat === "field-correct" && emailFormat === "field-correct"){
+            setAlertShown("alert-hidden")
+        }
+
         checkFormat(name, value);
 
         setFormState({
@@ -95,6 +99,10 @@ const RegForm = () => {
     function checkEmail(string){
         return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(string)
     }
+
+    // if (fullNameFormat !== "field-correct" || emailFormat !== "field-correct"){
+    //         setAlertShown("alert")
+    // }
 
     const handleSubmit = (event) => {
 
@@ -159,7 +167,7 @@ const RegForm = () => {
                             </div>
                         
                             <div className="button" onClick={() => {
-                                handleSubmit(alertShown)
+                                handleSubmit()
                                 
                                 }}><h3>Register</h3></div>
                         </form>

@@ -410,7 +410,28 @@ input:checked + .slider:before {
 }
 
 .alert{
-  color: black
+  color: black;
+  animation-name: showAlert;
+  animation-duration: 1s;
+}
+
+@keyframes hideAlert {
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes showAlert {
+  from {
+    top: 0;
+    height: 0%;
+    opacity: 0.0;
+  } to {
+    height: 14.3%;
+    top: 20%;
+    opacity: 1;
+  }
 }
 
 /* .partnersText {
