@@ -11,13 +11,22 @@ const RegForm = () => {
     const ShowAlert = () => {
         
         // this could be heavily optimized
-        if (fullNameFormat === "field-correct" && emailFormat === "field-correct" && success === true){
+        if (fullNameFormat === "field-correct" && emailFormat === "field-correct" && success === 200){
             return (
                 <Alert status='success' className="success-alert">
                 <AlertIcon />
                 You have successfully registered!
                 </Alert> 
             )
+        }
+
+        else if (fullNameFormat === "field-correct" && emailFormat === "field-correct" && success === 500) {
+             return (
+                <Alert status='warning' className="success-alert">
+                <AlertIcon />
+                Something went wrong! Please, try again.
+                </Alert> 
+            )   
         }
 
 
@@ -55,7 +64,7 @@ const RegForm = () => {
         }
     }
 
-    const [success, setSuccess] = useState(false)
+    const [success, setSuccess] = useState(0)
     const [alertShown, setAlertShown] = useState("alert-hidden")
     const [toggled, setToggled] = useState(false)
     const [inputBoxSchool, setInputBoxSchool] = useState("input-box-hidden")
@@ -89,6 +98,8 @@ const RegForm = () => {
         const target = event.target;
         const value = target.value;
         const name = target.name;
+
+        setSuccess(0)
 
         if (fullNameFormat === "field-correct" && emailFormat === "field-correct"){
             setAlertShown("alert-hidden")
@@ -126,11 +137,11 @@ const RegForm = () => {
          axios
           .post('http://10.252.27.2:8000/api/signup', formState)
           .then((res) => {
-            setSuccess(true)
+            setSuccess(res.status)
             console.log(res)
           })
           .catch((err) => {
-              setSuccess(false)
+              setSuccess(500)
             console.log(err);
           });
         }

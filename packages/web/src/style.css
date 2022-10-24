@@ -418,6 +418,10 @@ input:checked + .slider:before {
   color: black;
 }
 
+.success-alert {
+  color: black;
+}
+
 /* .partnersText {
   color: black;
   font-family: 'Poppins';
