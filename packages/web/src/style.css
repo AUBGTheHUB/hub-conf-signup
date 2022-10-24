@@ -159,6 +159,7 @@
     padding: 25px 30px;
     border-radius: 5px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10rem;
   }
   .container .title {
     font-size: 1.5rem;
@@ -410,7 +411,11 @@ input:checked + .slider:before {
 }
 
 .alert{
-  color: black
+  color: black;
+}
+
+.success-alert{
+  color: black;
 }
 
 /* .partnersText {
