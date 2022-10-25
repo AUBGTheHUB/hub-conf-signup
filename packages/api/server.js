@@ -5,6 +5,14 @@ const append = require('./sheets')
 const mailer = require('./email')
 const sheets = require('./sheets.js')
 const cors = require('cors')
+const https = require('https')
+const fs = require('fs')
+
+
+var options = {
+    key: fs.readFileSync('./certs/hubconf.key'),
+    cert: fs.readFileSync('./certs/hubconf.crt')
+}
 
 const app = express()
 const port = 8000
@@ -56,6 +64,6 @@ app.post('/api/signup', (req, res) => {
 
 })
 
-app.listen(port, () => {
+var server = https.createServer(options, app).listen(port, () => {
     console.log(`APP IS LISTENING ON PORT ${port}`)
 })
