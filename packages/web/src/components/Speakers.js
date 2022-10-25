@@ -7,7 +7,7 @@ const Speakers = () => {
    
     <div className="Speaker">     
     <div className="SpeakerDesc"> 
-    <h1 className="heading" id="anch_speakers">Speakers</h1>
+    <h1 className="heading" id="Speakers">Speakers</h1>
         <Flippedmb/>   
         
         <div className="gallery">

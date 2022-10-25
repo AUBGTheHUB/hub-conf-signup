@@ -11,7 +11,7 @@ const EventDesc = () => {
 <div className="Reg">     
         <div className="RegDesc">
             <Motherboard/>
-            <h1 className="heading" id="anch_reg">Registration</h1>     
+            <h1 className="heading" id="Registration">Registration</h1>     
         </div>
         <div className="content">
         <div>

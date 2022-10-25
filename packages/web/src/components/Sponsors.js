@@ -3,7 +3,7 @@ import "../style.css";
 
 const Sponsors  = () =>{
     return (
-    <div className="sponsorsSection" id="Partners">
+    <div className="sponsorsSection" id="Representatives">
             {/* <h3 className="partnersText">Sponsors</h3> */}
             <div className="partnersHolders">
               <img className="partnersImages" src="/comp_logos/amplify.png"></img>

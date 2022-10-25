@@ -9,16 +9,16 @@ const Navbar = () => {
                 <img  src = "whitelogo.png" alt="Hub logo"/>
             </div>
             <div className="nav-tags">
-                <a href="#anch_hubconf">HubConf</a>
+                <a href="#Hubconf">HubConf</a>
             </div>
             <div className="nav-tags">
-                <a href="#anch_reg">Registration</a>
+                <a href="#Speakers">Speakers</a>
             </div>
             <div className="nav-tags">
-                <a href="#Partners">Companies</a>
+                <a href="#Registration">Registration</a>
             </div>
             <div className="nav-tags">
-                <a href="#anch_speakers">Speakers</a>
+                <a href="#Representatives">Representatives</a>
             </div>
         </div> 
         {/* this is the end of the navdiv */}            
