@@ -9,7 +9,7 @@ const EventDesc = () => {
     <div className="Event">     
         <div className="EventDesc">
             <Motherboard/>
-            <h1 className="heading">Welcome to HubConf</h1>     
+            <h1 className="heading" id="anch_hubconf">Welcome to HubConf</h1>     
         </div>
         <div className="content">
             <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum <br></br>

@@ -240,26 +240,56 @@
   form input[type="radio"] {
     display: none;
   }
-  form .button {
-    height: 45px;
-    margin: 35px 0;
+
+  /* Submit Button */
+  
+.button {
+  height: 45px;
+  margin: 35px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 5px;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+
+  background-image: linear-gradient(to right, #6253e1, #852D91, #e05467, #eb3941, #c5157f);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+.button:hover {
+  background-position: 100% 0;
+  -moz-transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.button:focus {
+  outline: none;
+}
+
+@keyframes button {
+  0% {
+    background-position: 0% 10%;
   }
-  form .button input {
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background: #BE0071;
+  50% {
+    background-position: 100% 50%;
   }
-  form .button input:hover {
-    background:  #050032;
+  1000% {
+    background-position: 0% 50%;
   }
+}
+
+
+
 .switch {
   position: relative;
   display: inline-block;
@@ -562,14 +592,6 @@ input:checked + .slider:before {
 .field-incorrect{
   background-color: white;
   color: black !important;
-}
-
-.button {
-  width: 100%;
-  background-color: red;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .footer {

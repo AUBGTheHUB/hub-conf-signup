@@ -120,7 +120,7 @@ const RegForm = () => {
     }
 
     function checkEmail(string){
-        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(string)
+        return /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/.test(string)
     }
 
     // if (fullNameFormat !== "field-correct" || emailFormat !== "field-correct"){
@@ -190,11 +190,10 @@ const RegForm = () => {
                                     <input type="text" placeholder="Enter your school's name" name="school" onChange={handleInputChange}></input>
                                 </div>
                             </div>
-                        
-                            <div className="button" onClick={() => {
+                                <button className="button" onClick={() => {
                                 handleSubmit()
-                                
-                                }}><h3>Register</h3></div>
+                                }}>Register</button>
+                        
                         </form>
                     </div>
             </div>
