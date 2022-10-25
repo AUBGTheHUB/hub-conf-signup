@@ -4,7 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import { Alert, AlertIcon, AlertTitle, AlertDescription } from "@chakra-ui/react";
 
-
+let url = process.env.NODE_ENV === "production"? "https://hubconf.thehub-aubg.com/api/signup" : "http://127.0.0.1:8000/api/signup"
 
 const RegForm = () => {
 
@@ -135,7 +135,7 @@ const RegForm = () => {
         else {
             setAlertShown("alert-hidden")
          axios
-          .post('http://10.252.27.2:8000/api/signup', formState)
+          .post(url, formState)
           .then((res) => {
             setSuccess(res.status)
             console.log(res)
