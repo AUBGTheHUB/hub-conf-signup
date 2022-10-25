@@ -190,9 +190,9 @@ const RegForm = () => {
                                     <input type="text" placeholder="Enter your school's name" name="school" onChange={handleInputChange}></input>
                                 </div>
                             </div>
-                                <button className="button" onClick={() => {
+                                <button className="button" type="button" onClick={() => {
                                 handleSubmit()
-                                }}>Register</button>
+                                }} >Register</button>
                         
                         </form>
                     </div>
