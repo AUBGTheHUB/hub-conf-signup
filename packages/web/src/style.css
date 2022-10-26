@@ -617,7 +617,18 @@ input:checked + .slider:before {
   .nav-tags a{
     font-size: 50%;
   }
+  .Event .heading,
+  .Speaker .heading,
+  .Reg .heading{
+      font-size: 100%;
+
+  }
+  .Event .content p,
+  .Reg .content p{
+    font-size: 86%;
 }
+}
+
 /*sponsors*/
 @media only screen and (max-width: 1000px) {
   .partnersImages {
