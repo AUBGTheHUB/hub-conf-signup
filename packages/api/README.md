@@ -1,9 +1,16 @@
 # API
 
 ### Prerequisite files
-1. `.env`file. It contains two variables `HUB_MAIL_USERNAME` and `HUB_MAIL_PASSWORD` used for authentication when setting up Nodemailer in the `email.js` file.
 
-2. `hubconf.json` file. It contains credentials for the service account for GCP Authentication.
+* `.env`file.
+
+```shell
+ENV_VAR_1=<value>
+ENV_VAR_2=<value>
+```
+These variables are used when setting up authentication for Nodemailer.
+
+* `hubconf.json` file. It contains credentials for the service account for GCP Authentication.
 
 If you need the credentials contained in the files above, please contact @asynchroza
 
