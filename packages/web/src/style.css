@@ -597,3 +597,30 @@ input:checked + .slider:before {
 .footer {
   width: 100%;
 }
+
+
+
+
+/*Back to top Button*/
+.TopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #000;
+  color: #000;
+  cursor: pointer;
+  padding: 12px 18px;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.TopBtn:hover{
+  font-size: 25px;
+
+}
