@@ -4,7 +4,7 @@ import "../style.css";
 const Navbar = () => {
     return (
     <div className="nav-bar">
-        <div className="nav-div">
+        <div className="nav-div top">
             <div className="logo">
                 <img  src = "whitelogo.png" alt="Hub logo"/>
             </div>

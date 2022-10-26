@@ -4,6 +4,7 @@ import Speakers from "./components/Speakers";
 import Registration from "./components/Registration";
 import Sponsors from "./components/Sponsors";
 import Footer from "./components/Footer.tsx";
+import TopBtn from "./components/TopBtn.js";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Registration/>
       <Sponsors/>
       <Footer/>
+      <TopBtn/>
     </div>
   );
 }
