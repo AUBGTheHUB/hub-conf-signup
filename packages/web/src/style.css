@@ -540,32 +540,7 @@ input:checked + .slider:before {
   margin: 0;
 }
 
-  @media (max-width: 584px) {
-    .container {
-      max-width: 86%;
-      justify-content: center;
-      margin-left: 7%;
-    }
-    form .user-details .input-box {
-      margin-bottom: 15px;
-      width: 100%;
-    }
-    form .category {
-      width: 100%;
-    }
-    .content form .user-details {
-      max-height: 370px;
-      overflow-y: scroll;
-    }
-    .user-details::-webkit-scrollbar {
-      width: 5px;
-    }
-  }
-  @media (max-width: 459px) {
-    .container .content .category {
-      flex-direction: column;
-    }
-  }
+  
   
 .field-correct {
   background-color: white;
@@ -610,7 +585,7 @@ input:checked + .slider:before {
 
 
 /*responsive*/
-/*nav-bar*/
+/*nav-bar, headings, texts,*/
 @media only screen and (max-width: 1000px){
   .nav-tags {
     font-size: 20px;
@@ -629,12 +604,25 @@ input:checked + .slider:before {
   .Reg .content p{
     font-size: 86%;
   }
+  .TopBtn {
+    padding: 4px 10px;
+  }
+  .TopBtn:hover{
+    font-size: 18px;
+  }
 }
 
-
+/*seakers*/
 @media only screen and (max-width: 1000px) {
   .partnersImages {
     max-width: 30%;
+  }
+  .gallery img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
   }
   @media only screen and (max-width: 800px) {
     .partnersImages {
@@ -653,4 +641,30 @@ input:checked + .slider:before {
     }
   }
 }
-
+ /*form*/
+@media (max-width: 584px) {
+  .container {
+    max-width: 86%;
+    justify-content: center;
+    margin-left: 7%;
+  }
+  form .user-details .input-box {
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category {
+    width: 100%;
+  }
+  .content form .user-details {
+    max-height: 380px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar {
+    width: 5px;
+  }
+}
+@media (max-width: 459px) {
+  .container .content .category {
+    flex-direction: column;
+  }
+}
