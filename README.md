@@ -1,2 +1,26 @@
 # Landing and Sign Up page for HubConf
-- Development of the page will happen on October 22nd
+
+Start frontend: 
+
+```
+# go to web directory
+cd packages/web
+
+# install new dependencies
+npm install 
+
+# run 
+npm start
+```
+
+Start backend:
+```
+# go to api directory
+cd packages/web
+
+# install new dependencies
+npm install
+
+# run
+npm run dev
+```
