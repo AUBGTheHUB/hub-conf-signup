@@ -12,7 +12,7 @@
  if [ "$HEADHASH" != "$UPSTREAMHASH" ]
  then
     echo -e "${ERROR}Not up to date with origin. ${NOCOLOR}"
-    docker-compose down
+    # docker-compose down
     git pull
     docker-compose up --build -d
     exit 0
