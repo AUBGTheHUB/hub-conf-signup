@@ -578,6 +578,10 @@ input:checked + .slider:before {
   border-radius: 4px;
   transition: 0.2s;
 }
+a{
+    user-select: none;
+
+}
 .TopBtn:hover{
   font-size: 20px;
 

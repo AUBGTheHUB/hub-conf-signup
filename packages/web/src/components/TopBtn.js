@@ -3,9 +3,11 @@ import "../style.css";
 
 const TopBtn = () => {
     return (
+        <a href="#top">
         <div className="TopBtn">
-            <a href="#top">↑</a>
+            ↑
         </div>
+        </a>
       
 
     )
