@@ -624,14 +624,14 @@ input:checked + .slider:before {
   transition: 0.2s;
 }
 a{
+    -webkit-user-select: none;
     user-select: none;
-
 }
+
 .TopBtn:hover{
   font-size: 20px;
 
 }
-
 
 /*responsive*/
 /*nav-bar, headings, texts,*/
