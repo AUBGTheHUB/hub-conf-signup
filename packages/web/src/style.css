@@ -619,8 +619,8 @@ input:checked + .slider:before {
   }
   .gallery img {
     width: 100%;
-    max-width: 150px;
-    height: 150px;
+    max-width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 10px;
   }
