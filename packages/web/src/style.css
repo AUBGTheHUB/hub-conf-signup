@@ -188,7 +188,13 @@
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
+    transition: all .4s ease-in-out;
+    filter: grayscale(100%);
   }
+
+  .gallery img:hover {
+    filter: grayscale(0);
+}
   
   .gallery::after {
     content: "";
