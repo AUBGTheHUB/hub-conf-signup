@@ -7,7 +7,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from '@chakra-ui/react';
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 import { ReactNode } from 'react';
 
 const SocialButton = ({
@@ -56,14 +56,14 @@ export default function SmallWithSocial() {
         align={{ base: 'center', md: 'center' }}>
         <Text>© 2022 The Hub AUBG. All rights reserved</Text>
         <Stack direction={'row'} spacing={6}>
-          <SocialButton label={'Twitter'} href={'#'}>
-            <FaTwitter />
+          <SocialButton label={'Facebook'} href={'https://www.facebook.com/TheHubAUBG'}>
+            <FaFacebook />
           </SocialButton>
-          <SocialButton label={'YouTube'} href={'#'}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={'Instagram'} href={'#'}>
+          <SocialButton label={'Instagram'} href={'https://www.instagram.com/thehubaubg/'}>
             <FaInstagram />
+          </SocialButton>
+          <SocialButton label={'YouTube'} href={'https://www.youtube.com/channel/UChdtBZBvaK9XZurP3GjPDug'}>
+            <FaYoutube />
           </SocialButton>
         </Stack>
       </Container>
