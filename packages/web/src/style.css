@@ -74,17 +74,12 @@
   height: 100%;
 }
 
-
-
-
-
-
-
-
-
+.nav-tags p{
+  padding-left: 8px;
+}
 .nav-tags{
     font-size: 22px;
-    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
   justify-content: center;
   align-items: center;
@@ -629,7 +624,8 @@ input:checked + .slider:before {
   border-radius: 4px;
   transition: 0.2s;
 }
-a{
+.nav-div p,
+.TopBtn{
     -webkit-user-select: none;
     user-select: none;
 }
