@@ -648,12 +648,11 @@ input:checked + .slider:before {
   .nav-tags a{
     font-size: 50%;
   }
-  /* .Event .heading,
+  .Event .heading,
   .Speaker .heading,
   .Reg .heading{
-      font-size: 100%;
-
-  } */
+    font-size: 4.5vw;
+  }
   .Event .content p,
   .Reg .content p{
     font-size: 86%;
