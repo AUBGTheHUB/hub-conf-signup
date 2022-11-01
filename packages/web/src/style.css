@@ -104,7 +104,8 @@
 .Event .heading,
 .Speaker .heading,
 .Reg .heading{
-    width: 50%;
+    width: 75%;
+    padding-right: 25%;
     text-align: center;
     align-items: center; 
     box-sizing: border-box;
@@ -153,6 +154,7 @@
 }
 
 .Speaker .heading{
+  padding-right: 0%;
     width: 75%;
     padding-left:25%;
 }
@@ -646,12 +648,12 @@ input:checked + .slider:before {
   .nav-tags a{
     font-size: 50%;
   }
-  .Event .heading,
+  /* .Event .heading,
   .Speaker .heading,
   .Reg .heading{
       font-size: 100%;
 
-  }
+  } */
   .Event .content p,
   .Reg .content p{
     font-size: 86%;
