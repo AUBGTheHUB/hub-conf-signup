@@ -104,7 +104,8 @@
 .Event .heading,
 .Speaker .heading,
 .Reg .heading{
-    width: 50%;
+    width: 75%;
+    padding-right: 25%;
     text-align: center;
     align-items: center; 
     box-sizing: border-box;
@@ -125,13 +126,13 @@
 }
 .Event .content p,
 .Reg .content p{
-    text-align: left;
+    text-align: justify;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     color: white;
     font-weight:400;
     font-size: 20px;
-    max-width: 60%;  
+    max-width: 56.9%;  
     margin-top: 75px;
 }
 .Reg .content{
@@ -153,6 +154,7 @@
 }
 
 .Speaker .heading{
+  padding-right: 0%;
     width: 75%;
     padding-left:25%;
 }
@@ -179,17 +181,17 @@
   }
   
   .gallery img {
-    width: 100%;
+    width: 90%;
     max-width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
     transition: all .4s ease-in-out;
-    filter: grayscale(100%);
+    
   }
 
   .gallery img:hover {
-    filter: grayscale(0);
+    transform: scale(1.05);
 }
   
   .gallery::after {
@@ -610,7 +612,7 @@ input:checked + .slider:before {
 .TopBtn {
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 25px;
   z-index: 99;
   font-size: 18px;
   border: none;
@@ -649,12 +651,12 @@ input:checked + .slider:before {
   .Event .heading,
   .Speaker .heading,
   .Reg .heading{
-      font-size: 100%;
-
+    font-size: 4.5vw;
   }
   .Event .content p,
   .Reg .content p{
     font-size: 86%;
+    max-width: 80%;
   }
   .TopBtn {
     padding: 4px 10px;
@@ -670,11 +672,15 @@ input:checked + .slider:before {
     max-width: 30%;
   }
   .gallery img {
+    
     width: 100%;
-    max-width: 300px;
-    height: 300px;
+    max-width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 10px;
+  }
+  .gallery img:hover{
+    transform: scale(1);
   }
   @media only screen and (max-width: 800px) {
     .partnersImages {
@@ -695,6 +701,10 @@ input:checked + .slider:before {
 }
  /*form*/
 @media (max-width: 584px) {
+  .Reg .content{
+    margin-top: 55px;
+    margin-bottom: -110px;
+  }
   .container {
     max-width: 86%;
     justify-content: center;
