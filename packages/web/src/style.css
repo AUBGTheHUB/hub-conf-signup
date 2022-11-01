@@ -723,3 +723,17 @@ a{
     flex-direction: column;
   }
 }
+
+.verified-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  font-size: xxx-large;
+  font-weight: 500;
+  font-family:'poppins';
+  color: white;
+  background-image: linear-gradient(#BE0071, rgba(126, 52, 161, 0.75));
+}

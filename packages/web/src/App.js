@@ -1,25 +1,13 @@
-import Navbar from "./components/Navbar";
-import EventDesc from "./components/EventDesc";
-import Speakers from "./components/Speakers";
-import Registration from "./components/Registration";
-import Sponsors from "./components/Sponsors";
-import Footer from "./components/Footer.tsx";
-import TopBtn from "./components/TopBtn.js";
+import { Routes, Route } from 'react-router-dom'
+import Verified from "./components/Verified";
+import Webpage from './components/Webpage';
 
 function App() {
   return (
-    // Check this UI Framework
-    // Use for navkbar and other elements
-    // https://chakra-ui.com/getting-started
-    <div className="website">
-      <Navbar/>
-      <EventDesc/>
-      <Speakers/>
-      <Registration/>
-      <Sponsors/>
-      <Footer/>
-      <TopBtn/>
-    </div>
+    <Routes>
+      <Route path="/" element={<Webpage />} />
+      <Route path="/verify" element={<Verified />} />
+    </Routes>
   );
 }
 
