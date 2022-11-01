@@ -125,7 +125,7 @@
 }
 .Event .content p,
 .Reg .content p{
-    text-align: left;
+    text-align: justify;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
     color: white;
