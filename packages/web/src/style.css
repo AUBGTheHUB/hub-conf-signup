@@ -181,17 +181,17 @@
   }
   
   .gallery img {
-    width: 100%;
+    width: 90%;
     max-width: 300px;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
     transition: all .4s ease-in-out;
-    filter: grayscale(100%);
+    
   }
 
   .gallery img:hover {
-    filter: grayscale(0);
+    transform: scale(1.05);
 }
   
   .gallery::after {
@@ -672,12 +672,15 @@ input:checked + .slider:before {
     max-width: 30%;
   }
   .gallery img {
-    filter: none;
+    
     width: 100%;
     max-width: 250px;
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
+  }
+  .gallery img:hover{
+    transform: scale(1);
   }
   @media only screen and (max-width: 800px) {
     .partnersImages {
