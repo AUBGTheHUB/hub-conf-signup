@@ -152,7 +152,7 @@ const RegForm = () => {
         <div>
             <div className="container" >
                 <div className="title">Register for HubConf</div>
-                    <div className="content">
+                    <div className="">
                         <form action="#">
                             {ShowAlert()}
                             <div className="user-details">
