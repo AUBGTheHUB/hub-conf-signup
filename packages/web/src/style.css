@@ -74,17 +74,12 @@
   height: 100%;
 }
 
-
-
-
-
-
-
-
-
+.nav-tags p{
+  padding-left: 8px;
+}
 .nav-tags{
     font-size: 22px;
-    padding-left: 30px;
+    padding-right: 30px;
     display: flex;
   justify-content: center;
   align-items: center;

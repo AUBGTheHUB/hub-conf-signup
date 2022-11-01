@@ -14,7 +14,7 @@ const Navbar = () => {
                         <img src="whitelogo.png" alt="Hub logo" />
                     </div>
                     <div className="nav-tags">
-                        <a href="#Hubconf">HubConf</a>
+                        <p>HubConf</p>
                     </div>
                     <div className="nav-tags">
                         <a href="#Speakers">Speakers</a>
