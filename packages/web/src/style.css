@@ -149,7 +149,9 @@
     width: 25%;
 }
 
-
+.Event {
+  padding-top: 0.5rem;
+}
 
 /*speakers style*/
 .Speaker{
@@ -722,4 +724,31 @@ a{
   .container .content .category {
     flex-direction: column;
   }
+}
+
+.mobile-nav{
+  width: 100%;
+}
+
+.mobile-nav-collapse {
+  background-color: transparent !important;
+}
+
+.mobile-nav-collapsed {
+  font-family: "poppins";
+  margin-left: 2rem;
+}
+
+.mobile-nav-logo {
+  font-family: "poppins";
+  font-weight: 600;
+  margin-left: 2rem;
+}
+
+.navbar-toggler {
+  margin-right: 2rem !important;
+}
+
+.navbar-toggler.collapsed {
+  margin-right: 2rem !important;
 }

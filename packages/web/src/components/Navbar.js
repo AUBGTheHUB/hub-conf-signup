@@ -1,15 +1,26 @@
 import React from "react";
 import "../style.css";
 import { useMediaQuery } from 'react-responsive'
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
 
-const Navbar = () => {
+
+const NavigationBar = () => {
 
     const isMobile = useMediaQuery({ query: '(max-width: 1200px)' })
 
     if (isMobile) {
         return (
-            <div>
-                <h1>HELLO</h1>
+            <div className="mobile-nav">
+                <Navbar collapseOnSelect expand="lg" variant="dark" className="mobile-nav-collapse">
+                    <Navbar.Brand className="mobile-nav-logo">HubConf</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav" className="mobile-nav-collapsed">
+                        <Nav.Link href="#Speakers">Speakers</Nav.Link>
+                        <Nav.Link href="#Registration">Register</Nav.Link>
+                        <Nav.Link href="#Representatives">Representatives</Nav.Link>
+                    </Navbar.Collapse>
+                </Navbar>
             </div>
         )
     }
@@ -45,4 +56,4 @@ const Navbar = () => {
 
 }
 
-export default Navbar;
+export default NavigationBar;
