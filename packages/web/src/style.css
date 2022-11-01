@@ -135,7 +135,7 @@
     margin-top: 75px;
 }
 .Reg .content{
-  margin-top: 140px;
+  margin-top: 120px;
 }
 /*png "line"*/
 .Event .motherboard,
@@ -230,7 +230,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 20px 0 12px 0;
+    margin: 40px 0 12px 0;
     color: black;
   }
   form .user-details .input-box {
