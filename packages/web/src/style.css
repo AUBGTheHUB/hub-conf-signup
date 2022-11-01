@@ -102,6 +102,7 @@
     justify-content: space-between;
     padding-top: 45px;
     padding-bottom: 45px;
+
 }
 
 /*style for section heading - e.g. welcome to hubconf*/
@@ -405,7 +406,6 @@ input:checked + .slider:before {
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 75px;
 }
 
 
