@@ -672,6 +672,7 @@ input:checked + .slider:before {
     max-width: 30%;
   }
   .gallery img {
+    filter: none;
     width: 100%;
     max-width: 250px;
     height: 250px;
@@ -699,6 +700,7 @@ input:checked + .slider:before {
 @media (max-width: 584px) {
   .Reg .content{
     margin-top: 55px;
+    margin-bottom: -110px;
   }
   .container {
     max-width: 86%;
