@@ -5,7 +5,7 @@ import Flippedmb from "./Flippedmb";
 const Speakers = () => {
     return (
    
-    <div className="Speaker">     
+    <div className="Speaker" hidden>     
     <div className="SpeakerDesc"> 
     <h1 className="heading" id="Speakers">Speakers</h1>
         <Flippedmb/>   
