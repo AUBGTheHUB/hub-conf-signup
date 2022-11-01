@@ -1,38 +1,3 @@
-const nodemailer = require('nodemailer');
-const loadenv = require('dotenv')
-
-
-loadenv.config()
-
-module.exports = {
-    sendMail: function (obj) {
-
-        const transporter = nodemailer.createTransport({
-
-            host: 'smtp.gmail.com',
-
-            port: 465,
-
-            auth: {
-
-                user: process.env.HUB_MAIL_USERNAME,
-
-                pass: process.env.HUB_MAIL_PASSWORD
-
-            }
-
-        })
-
-        message = {
-
-            from: "The Hub AUBG",
-
-            to: obj.email,
-
-            subject: "HubConf 2022",
-
-            html:
-                `
 
 
 <!doctype html>
@@ -68,7 +33,7 @@ module.exports = {
     <div class="container"
         style="max-width: 700px;  background-color: #fcfcff; padding-left: 30px; padding-right: 90px;">
         <br /><br />
-        <h4><b>Dear ${obj.fullName}, <br /></b></h4>
+        <h4><b>Dear ${}, <br /></b></h4>
         <h4><b>Thank you for registering for HubConf 2022!</b></h4>
 
         <p>You may find your ticket attached below: </p>
@@ -123,14 +88,3 @@ module.exports = {
 </body>
 
 </html>
-            `
-
-        }
-
-        transporter.sendMail(message, (err, info) => {
-            if (err) {
-                console.log(err)
-            }
-        })
-    }
-}
