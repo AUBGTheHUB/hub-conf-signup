@@ -697,6 +697,9 @@ input:checked + .slider:before {
 }
  /*form*/
 @media (max-width: 584px) {
+  .Reg .content{
+    margin-top: 55px;
+  }
   .container {
     max-width: 86%;
     justify-content: center;
