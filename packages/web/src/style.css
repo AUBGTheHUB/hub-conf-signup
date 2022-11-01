@@ -656,6 +656,7 @@ input:checked + .slider:before {
   .Event .content p,
   .Reg .content p{
     font-size: 86%;
+    max-width: 80%;
   }
   .TopBtn {
     padding: 4px 10px;
