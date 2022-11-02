@@ -62,7 +62,7 @@ module.exports = {
         <h4><b>Dear ${obj.fullName}, <br /></b></h4>
         <h4><b>Thank you for registering for HubConf 2022!</b></h4>
 
-        <p>The Hub will be thrilled to meet you on November 12th in the BAC lobby at 12:00pm.</p>
+        <p>The Hub will be thrilled to meet you on November 12th in the BAC lobby at 11:00am.</p>
         <br/>
         <p>Make sure to follow our social media accounts for updates about the event and exciting upcoming surpises - <a href="https://facebook.com/thehubaubg">Facebook</a>, <a href="https://instagram.com/thehubaubg">Instagram</a> and 
             <a href="https://linkedin.com/company/the-hub-aubg">LinkedIn</a></p>
