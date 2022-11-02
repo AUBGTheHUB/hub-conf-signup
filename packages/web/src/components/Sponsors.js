@@ -19,7 +19,7 @@ const Sponsors  = () =>{
               {/* <img className="partnersImages" src="/comp_logos/roiti.png"></img> */}
               {/* <img className="partnersImages" src="/comp_logos/mentormate.png"></img> */}
               {/* <img className="partnersImages" src="/comp_logos/axway.png"></img> */}
-              {/* <img className="partnersImages" src="/comp_logos/out2bound.png"></img> */}
+              <img className="partnersImages" src="/comp_logos/out2bound.png"></img>
               {/* <img className="partnersImages" src="/comp_logos/weband.png"></img> */}
               {/* <img className="partnersImages" src="/comp_logos/weichain.png"></img> */}
               {/* <img className="partnersImages" src="/comp_logos/musalasoft.png"></img> */}
