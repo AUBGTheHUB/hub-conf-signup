@@ -40,7 +40,7 @@ parseBody = (obj) => {
     return newObj
 }
 
-app.post('/api/signup', (req, res) => {
+app.post('/api/signup', async(req, res) => {
 
     if (!validateBody(req.body)) {
         res.sendStatus(400)
@@ -49,9 +49,15 @@ app.post('/api/signup', (req, res) => {
 
     try {
         cleanedObj = parseBody(req.body)
-        sheets.handleAppending(cleanedObj)
-        mailer.sendMail(cleanedObj)
-        res.sendStatus(200)
+        let append = await sheets.handleAppending(cleanedObj)
+        console.log(append)
+
+        if (append){
+            mailer.sendMail(cleanedObj)
+            res.sendStatus(200)
+        } else {
+            res.sendStatus(409)
+        }
     }
 
     catch {

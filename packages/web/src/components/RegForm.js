@@ -29,6 +29,15 @@ const RegForm = () => {
             )   
         }
 
+        else if (fullNameFormat === "field-correct" && emailFormat === "field-correct" && success === 409) {
+             return (
+                <Alert status='warning' className="success-alert">
+                <AlertIcon />
+                You are already signed up! 
+                </Alert> 
+            )   
+        }
+
 
         else if (fullNameFormat === "field-incorrect" && emailFormat === "field-incorrect"){
             return (
@@ -141,7 +150,10 @@ const RegForm = () => {
             console.log(res)
           })
           .catch((err) => {
-              setSuccess(500)
+              if(err.response.status === 409){
+                  setSuccess(409)
+              }
+              else {setSuccess(500)}
             console.log(err);
           });
         }
