@@ -5,8 +5,8 @@
 * `.env`file:
 
 ```shell
-ENV_VAR_1=<value>
-ENV_VAR_2=<value>
+HUB_MAIL_PASSWORD=<value>
+HUB_MAIL_USERNAME=<value>
 ```
 
 These variables are needed for sending emails through Nodemailer.
