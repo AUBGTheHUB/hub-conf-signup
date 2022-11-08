@@ -15,7 +15,7 @@ const Sponsors  = () =>{
               <img className="partnersImages" src="/comp_logos/chaos.png"></img>
               {/* <img className="partnersImages" src="/comp_logos/uber_gold.png"></img> */}
               {/** bronze */}
-              {<img className="partnersImages" src="/comp_logos/postbank.png"></img>}
+              <img className="partnersImages" src="/comp_logos/postbank.png"></img>
               {/* <img className="partnersImages" src="/comp_logos/roiti.png"></img> */}
               {/* <img className="partnersImages" src="/comp_logos/mentormate.png"></img> */}
               {/* <img className="partnersImages" src="/comp_logos/axway.png"></img> */}
