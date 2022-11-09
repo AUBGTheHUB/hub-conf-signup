@@ -11,14 +11,14 @@ const Speakers = () => {
         <Flippedmb />
 
         <div className="gallery">
-          <img src="boris_angelov.png"></img>
-          <img src="dimitar_mitkov.png"></img>
-          <img src="georgi_kostadinov.png"></img>
-          <img src="georgi_mutafchiev.png"></img>
-          <img src="ina_toncheva.png"></img>
-          <img src="ivan_angelinin.png"></img>
-          <img src="nikolay_babanov.png"></img>
-          <img src="paulina_chotrova.png"></img>
+          <img src="Speakers/boris_angelov.png"></img>
+          <img src="Speakers/dimitar_mitkov.png"></img>
+          <img src="Speakers/georgi_kostadinov.png"></img>
+          <img src="Speakers/georgi_mutafchiev.png"></img>
+          <img src="Speakers/ina_toncheva.png"></img>
+          <img src="Speakers/ivan_angelinin.png"></img>
+          <img src="Speakers/nikolay_babanov.png"></img>
+          <img src="Speakers/paulina_chotrova.png"></img>
         </div>
       </div>
     </div>
