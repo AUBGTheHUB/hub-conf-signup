@@ -16,7 +16,7 @@ const Navbar = () => {
                     <div className="nav-tags">
                         <p>HubConf</p>
                     </div>
-                    <div className="nav-tags" hidden>
+                    <div className="nav-tags">
                         <a href="#Speakers">Speakers</a>
                     </div>
                     <div className="nav-tags">
