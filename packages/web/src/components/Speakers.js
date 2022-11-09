@@ -11,14 +11,14 @@ const Speakers = () => {
         <Flippedmb/>   
         
         <div className="gallery">
-      <img src="https://media.discordapp.net/attachments/756143084189778043/1039950769203466271/boris_angelov_name.png?width=695&height=707"></img>
-      <img src="https://media.discordapp.net/attachments/756143084189778043/1039950883561164901/dimitar_mitkov_.png?width=695&height=707"></img>
-      <img src="https://media.discordapp.net/attachments/756143084189778043/1039951031821422622/georgi_kostadinov_.png?width=693&height=706"></img>
-      <img src="https://media.discordapp.net/attachments/756143084189778043/1039951003279171685/georgi_mutafchiev_.png?width=695&height=707"></img>
-      <img src="https://media.discordapp.net/attachments/756143084189778043/1039951155263967262/ina_toncheva_.png?width=695&height=707"></img>
-      <img src="https://media.discordapp.net/attachments/756143084189778043/1039951169923063888/ivan_angelinin_.png?width=696&height=707"></img>
-      <img src="https://media.discordapp.net/attachments/756143084189778043/1039951206568693780/nikolay_babanov_.png?width=694&height=707"></img>
-      <img src="https://media.discordapp.net/attachments/756143084189778043/1039951218006573087/paulina_chotrova_.png?width=696&height=707"></img>
+      <img src="/packages/web/src/speakers/boris_angelov.png"></img>
+      <img src="/packages/web/src/speakers/dimitar_mitkov.png"></img>
+      <img src="/packages/web/src/speakers/georgi_kostadinov.png"></img>
+      <img src="/packages/web/src/speakers/georgi_mutafchiev.png"></img>
+      <img src="/packages/web/src/speakers/ina_toncheva.png"></img>
+      <img src="/packages/web/src/speakers/ivan_angelinin.png"></img>
+      <img src="/packages/web/src/speakers/nikolay_babanov.png"></img>
+      <img src="/packages/web/src/speakers/paulina_chotrova.png"></img>
         </div>
     </div>
     </div>
